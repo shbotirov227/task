@@ -1,0 +1,43 @@
+.ViewsCard {
+	background: #fcfcfc;
+	border-radius: 8px;
+	padding: 30px;
+	width: 70%;
+
+	.title {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: -0.01em;
+		color: #6f767e;
+	}
+	.val {
+		border-radius: 6px;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #6f767e;
+		box-sizing: border-box;
+		width: 10%;
+		padding: 3px 7px;
+
+		&.bgc {
+			background: #b5e4ca;
+		}
+	}
+	td {
+		&:first-child {
+			background-color: transparent;
+		}
+		width: 120px;
+		margin-right: 20px;
+	}
+
+	.thead {
+		padding-bottom: 25px;
+		border-bottom: 1px solid #efefef;
+	}
+}
