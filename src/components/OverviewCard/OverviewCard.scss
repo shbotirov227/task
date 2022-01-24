@@ -1,0 +1,79 @@
+.OverviewCard {
+	padding: 35px;
+	width: 26%;
+	border-radius: 12px;
+
+	&-icon {
+		width: 50px;
+		height: 50px;
+	}
+
+	&-top {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		margin-top: 20px;
+	}
+
+	&-title {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 16px;
+		letter-spacing: -0.01em;
+		color: #33383f;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 28%;
+
+		svg {
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	&-img {
+	}
+
+	&-total {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 48px;
+		line-height: 48px;
+		letter-spacing: -0.03em;
+		color: #1a1d1f;
+	}
+
+	&-statusIcon {
+	}
+
+	&-status {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: -0.01em;
+		color: #6f767eff;
+		background: #fcfcfc;
+		border-radius: 4px;
+		padding: 5px;
+		width: 120px;
+
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+
+		& .up {
+			color: #83bf6e;
+		}
+
+		& .down {
+			color: #ff6a55;
+		}
+		svg {
+			margin-right: 10px;
+		}
+	}
+}

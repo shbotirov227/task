@@ -1,0 +1,12 @@
+[
+	{
+		"name": ["Week", "Products", "Views", "Likes", "Comments"]
+	},
+	{
+		"id": 1,
+		"date": "25 Sep - 1 Oct",
+		"status": ["8","24k","48","16"],
+		"percentage": ["37.8%", "37.8%", "37.8%", "56%"],
+		"statusIcon": ["up", "up", "down", "down"]
+	}
+]

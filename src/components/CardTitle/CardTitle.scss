@@ -1,0 +1,41 @@
+.CardTitle {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&-left {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	&-color {
+		width: 16px;
+		height: 32px;
+		border-radius: 5px;
+		margin-right: 16px;
+	}
+
+	&-title {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 32px;
+		letter-spacing: -0.02em;
+		color: #1a1d1f;
+	}
+
+	&-select {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #6f767e;
+		background: #fcfcfc;
+		border: 2px solid #efefef;
+		box-sizing: border-box;
+		border-radius: 8px;
+		padding: 8px 26px 8px 16px;
+		outline: none;
+	}
+}

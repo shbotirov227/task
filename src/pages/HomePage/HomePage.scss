@@ -1,0 +1,15 @@
+.HomePage {
+	background: #f4f4f4;
+	padding: 40px;
+
+	&-inner {
+		.HomePage-title {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 40px;
+			line-height: 48px;
+			letter-spacing: -0.02em;
+			color: #272b30;
+		}
+	}
+}

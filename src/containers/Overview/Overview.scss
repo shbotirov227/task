@@ -1,0 +1,15 @@
+.Overview {
+	width: 100%;
+	background: #fcfcfc;
+	border-radius: 8px;
+	padding: 30px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+
+	&-cards {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top: 40px;
+	}
+}

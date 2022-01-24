@@ -1,0 +1,94 @@
+.Header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fcfcfc;
+	box-shadow: inset 1px 0px 0px #f4f4f4;
+	padding: 24px 40px;
+	width: 100%;
+	box-sizing: border-box !important;
+
+	&-input {
+		position: relative;
+		max-width: 360px;
+
+		.MuiInput-input {
+			background: #f4f4f4;
+			border-radius: 12px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 12px 120px 12px 50px;
+			border: none;
+			outline: none;
+			position: relative;
+			caret-color: #2a85ff;
+			// border-radius: 2px;
+		}
+
+		.Header-inputBtn {
+			background: #ffffff;
+			box-shadow: inset 0 -1px 2px rgba(0, 0, 0, 0.05),
+				inset 0 -1px 1px rgba(0, 0, 0, 0.04),
+				inset 0 2px 0 rgba(255, 255, 255, 0.25);
+			border-radius: 8px;
+			padding: 4px 12px;
+			outline: none;
+			border: none;
+			cursor: pointer;
+			position: absolute;
+			top: 7px;
+			right: 35px;
+		}
+
+		svg {
+			position: absolute;
+			z-index: 1;
+			top: 11px;
+			left: 20px;
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	.Header-right {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+
+		.Header-right-btn {
+			background: #2a85ff;
+			border-radius: 12px;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 11px;
+			line-height: 10px;
+			letter-spacing: -0.01em;
+			color: #fcfcfc;
+			padding: 15px 15px;
+			margin-right: 10px;
+
+			svg {
+				width: 10px;
+				height: 10px;
+				margin-right: 10px;
+			}
+		}
+
+		.iconBtn {
+			padding: 0;
+			margin-right: 10px;
+			svg {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		.customerImg {
+			width: 45px;
+			height: 45px;
+			border-radius: 50%;
+		}
+	}
+}
