@@ -1,16 +1,14 @@
-import { StatusArrowDown, StatusArrowIcon } from "../../assets/icons/icons";
+// import { StatusArrowDown, StatusArrowIcon } from "../../assets/icons/icons";
 import "./ViewsCard.scss";
-import datas from "./data.json";
-import { useState } from "react";
+// import datas from "./data.json";
+// import { useState } from "react";
 import CardTitle from "../CardTitle/CardTitle";
 
 const ViewsCard = ({ title, val, val2, up, down, statusColor, status }) => {
 	// <span className={`${down ? "down" : up ? "up" : undefined}`}>
 	// 	{statusColor}
 	// </span>
-	const [data, setData] = useState(datas);
-
-	let nmadir = [];
+	// const [data, setData] = useState(datas);
 
 	return (
 		<div className="ViewsCard">
@@ -28,22 +26,22 @@ const ViewsCard = ({ title, val, val2, up, down, statusColor, status }) => {
 			<table>
 				<thead>
 					<tr className="thead">
-						{title.map((el) => (
-							<td className="title">{el}</td>
+						{title.map((el, index) => (
+							<td className="title" key={index}>{el}</td>
 						))}
 					</tr>
 				</thead>
 				<tbody>
 					<tr>
-						{val.map((el) => (
+						{val.map((el, index) => (
 							<td>
-								<span className="val bgc">{el}</span>
+								<span className="val bgc" key={index}>{el}</span>
 							</td>
 						))}
 					</tr>
 					<tr>
-						{val2.map((el) => (
-							<td className="val">{el}</td>
+						{val2.map((el, index) => (
+							<td className="val" key={index}>{el}</td>
 						))}
 					</tr>
 				</tbody>
@@ -54,10 +52,8 @@ const ViewsCard = ({ title, val, val2, up, down, statusColor, status }) => {
 
 export default ViewsCard;
 
-{
-	/* {up.map((el) => (up ? <StatusArrowIcon /> : undefined))} */
-}
 
-{
-	/* {up ? <StatusArrowIcon /> : down ? <StatusArrowDown /> : undefined} */
-}
+/* {up.map((el) => (up ? <StatusArrowIcon /> : undefined))} */
+
+/* {up ? <StatusArrowIcon /> : down ? <StatusArrowDown /> : undefined} */
+

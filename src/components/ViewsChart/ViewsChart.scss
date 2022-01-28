@@ -1,0 +1,44 @@
+.ViewsChart {
+	padding: 25px;
+	box-sizing: border-box;
+	background: #fcfcfc;
+	border-radius: 8px;
+
+	.recharts-wrapper {
+		.recharts-surface {
+			.recharts-layer {
+				line {
+					display: none;
+				}
+			}
+		}
+		.recharts-tooltip-wrapper {
+			.recharts-default-tooltip {
+				background-color: #272b30 !important;
+				border: 1px solid rgba(255, 255, 255, 0.12) !important;
+				box-sizing: border-box;
+				box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1),
+					0px 2px 4px rgba(0, 0, 0, 0.1), inset 0px 0px 1px #000000;
+				border-radius: 8px;
+
+				.recharts-tooltip-label {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 12px;
+					line-height: 12px;
+					letter-spacing: -0.01em;
+					color: #efefef;
+
+					p li {
+						font-style: normal;
+						font-weight: 500;
+						font-size: 12px;
+						line-height: 12px;
+						letter-spacing: -0.01em;
+						color: #efefef;
+					}
+				}
+			}
+		}
+	}
+}

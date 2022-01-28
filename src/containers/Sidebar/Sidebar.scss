@@ -1,5 +1,12 @@
 .Sidebar {
-	width: 10%;
-	// background-color: #fcfcfc;
-	background-color: #615656;
+	width: 20%;
+	background-color: #fcfcfc;
+	// background-color: #615656;
+	padding: 25px;
+
+	.Logo {
+		margin-bottom: 50px !important;
+		width: 50px;
+		height: 50px;
+	}
 }

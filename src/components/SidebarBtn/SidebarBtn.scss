@@ -1,0 +1,41 @@
+.SidebarBtn {
+	width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: -0.01em;
+	color: #6f767e;
+	padding: 12px 15px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	cursor: pointer;
+	transition: all ease 0.5s;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+
+	&:hover {
+		background: #efefef;
+		box-shadow: inset 0px -2px 1px rgba(0, 0, 0, 0.05),
+			inset 0px 1px 1px #ffffff;
+		border-radius: 12px;
+		color: #1a1d1f;
+	}
+
+	svg {
+		width: 20px;
+		height: 20px;
+		margin-right: 15px;
+	}
+
+	.isOpenIcon {
+		svg {
+			width: 12px;
+			height: 10px;
+		}
+	}
+}

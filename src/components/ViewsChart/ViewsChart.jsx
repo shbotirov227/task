@@ -1,31 +1,26 @@
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid } from "recharts";
+import { BarChart, Bar, XAxis, Tooltip } from "recharts";
+import CardTitle from "../CardTitle/CardTitle";
 
 import "./ViewsChart.scss";
 
 const ViewsChart = () => {
 	const data = [
-		{ name: "A", x: 12, y: 23, z: 122 },
-		{ name: "B", x: 22, y: 3, z: 73 },
-		{ name: "C", x: 13, y: 15, z: 32 },
-		{ name: "D", x: 44, y: 35, z: 23 },
-		{ name: "E", x: 35, y: 45, z: 20 },
-		{ name: "F", x: 62, y: 25, z: 29 },
-		{ name: "G", x: 37, y: 17, z: 61 },
-		{ name: "H", x: 28, y: 32, z: 45 },
-		{ name: "I", x: 19, y: 43, z: 93 },
+		{ day: "Mo", x: 134, fill: "#B5E4CA" },
+		{ day: "Tu", x: 285, fill: "#B5E4CA" },
+		{ day: "We", x: 173, fill: "#B5E4CA" },
+		{ day: "Th", x: 50, fill: "#FFBC99FF" },
+		{ day: "Fr", x: 104, fill: "#B5E4CA" },
+		{ day: "Sa", x: 550, fill: "#2982FAFF" },
+		{ day: "Su", x: 105, fill: "#B5E4CA" },
 	];
 
 	return (
 		<div className="ViewsChart">
-			<h2>ViewsChart</h2>
-
-			<BarChart width={500} height={500} data={data}>
-				<CartesianGrid />
-				<XAxis dataKey="name" />
-				<YAxis />
-				<Bar dataKey="x" stackId="a" fill="#8884d8" />
-				<Bar dataKey="y" stackId="a" fill="#82ca9d" />
-				<
+			<CardTitle title="Product views" color="#B1E5FC" margin="30px" />
+			<BarChart width={340} height={160} data={data}>
+				<XAxis dataKey="day" />
+				<Bar dataKey="x" stackId="a" fill="fill" />
+				<Tooltip hover="fill" />
 			</BarChart>
 		</div>
 	);

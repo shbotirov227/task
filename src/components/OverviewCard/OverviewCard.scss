@@ -26,15 +26,12 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		width: 28%;
+		width: 32%;
 
 		svg {
-			width: 15px;
+			width: 18px;
 			height: 15px;
 		}
-	}
-
-	&-img {
 	}
 
 	&-total {
@@ -44,9 +41,6 @@
 		line-height: 48px;
 		letter-spacing: -0.03em;
 		color: #1a1d1f;
-	}
-
-	&-statusIcon {
 	}
 
 	&-status {
