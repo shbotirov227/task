@@ -1,7 +1,7 @@
 .SidebarBtn {
 	width: 100%;
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
 	font-style: normal;
 	font-weight: 600;
@@ -24,6 +24,18 @@
 			inset 0px 1px 1px #ffffff;
 		border-radius: 12px;
 		color: #1a1d1f;
+
+		&-title {
+			svg {
+				fill: #1a1d1f;
+			}
+		}
+	}
+
+	&-title {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	svg {
@@ -36,6 +48,13 @@
 		svg {
 			width: 12px;
 			height: 10px;
+		}
+	}
+
+	&-dropdown {
+		&-btn {
+			width: 100%;
+			display: block;
 		}
 	}
 }

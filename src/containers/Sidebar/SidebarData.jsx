@@ -1,5 +1,3 @@
-// import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-
 import {
 	SidebarBtn1,
 	SidebarBtn2,
@@ -8,7 +6,7 @@ import {
 	SidebarBtn5,
 	SidebarBtn6,
 	IconOpened,
-	IconClosed
+	IconClosed,
 } from "../../assets/icons/icons";
 
 export const SidebarData = [
@@ -27,25 +25,23 @@ export const SidebarData = [
 		subNav: [
 			{
 				title: "Dashboard",
-				path: "/dashboard",
+				path: "/products/dashboard",
 				icon: "",
-				notification: "",
 			},
 			{
 				title: "Drafts",
-				path: "/drafts",
+				path: "/products/drafts",
 				icon: "",
 				notification: 2,
 			},
 			{
 				title: "Released",
-				path: "/released",
+				path: "/products/released",
 				icon: "",
-				notification: "",
 			},
 			{
 				title: "Scheduled",
-				path: "/scheduled",
+				path: "/products/scheduled",
 				icon: "",
 				notification: 8,
 			},
@@ -61,13 +57,12 @@ export const SidebarData = [
 		subNav: [
 			{
 				title: "Released",
-				path: "/released",
+				path: "/customers/released",
 				icon: "",
-				notification: "",
 			},
 			{
 				title: "Scheduled",
-				path: "/scheduled",
+				path: "/customers/scheduled",
 				icon: "",
 				notification: 8,
 			},
@@ -82,20 +77,19 @@ export const SidebarData = [
 
 	{
 		title: "Income",
-		path: "/income",
+		path: "/settings",
 		icon: <SidebarBtn5 />,
 		iconClosed: <IconClosed />,
 		iconOpened: <IconOpened />,
 		subNav: [
 			{
 				title: "Dashboard",
-				path: "/dashboard",
+				path: "/income/dashboard",
 				icon: "",
-				notification: "",
 			},
 			{
 				title: "Drafts",
-				path: "/drafts",
+				path: "/income/drafts",
 				icon: "",
 				notification: 2,
 			},

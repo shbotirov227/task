@@ -14,19 +14,11 @@ function App() {
 				<Router>
 					<div className="inner container">
 						<Sidebar />
-						<div
-							style={{
-								width: "100%",
-								boxSizing: "border-box",
-								backgroundColor: "#f4f4f4",
-							}}>
+						<div style={{ width: "100%", boxSizing: "border-box", backgroundColor: "#f4f4f4"}}>
 							<Header />
 							<Routes>
 								<Route exact path="/" element={<HomePage />} />
-								<Route
-									path="/settings"
-									element={<SettingsPage />}
-								/>
+								<Route path="/settings" element={<SettingsPage />} />
 								<Route path="/signup" element={<SignUp />} />
 							</Routes>
 						</div>
