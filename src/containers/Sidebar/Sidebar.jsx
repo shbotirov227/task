@@ -27,6 +27,11 @@ const Sidebar = () => {
 					/>
 				))}
 			</div>
+
+			<div className="Sidebar-footer">
+				<h4>Help & getting started</h4>
+				<span>8</span>
+			</div>
 		</div>
 	);
 };

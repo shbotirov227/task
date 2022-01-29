@@ -3,9 +3,11 @@
 	box-sizing: border-box;
 	background: #fcfcfc;
 	border-radius: 8px;
+	width: 33.5%;
 
 	.recharts-wrapper {
 		.recharts-surface {
+			width: 320px;
 			.recharts-layer {
 				line {
 					display: none;

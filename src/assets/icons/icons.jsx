@@ -292,6 +292,23 @@ const IconOpened = () => {
 	)
 }
 
+const BtnIcon = () => {
+	return (
+		<svg width="37" height="48" viewBox="0 0 37 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M23 0.999999C23 0.447714 23.4477 0 24 0C24.5523 0 25 0.447715 25 1V48H23V0.999999Z" fill="#EFEFEF"/>
+			<path d="M24 12V16C24 20.4183 27.5817 24 32 24H36" stroke="#EFEFEF" stroke-width="2" stroke-linecap="round"/>
+		</svg>
+	)
+}
+
+const ArrowRight = () => {
+	return (
+		<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<path d="M0.292893 12.2929C-0.0976311 12.6834 -0.0976311 13.3166 0.292893 13.7071C0.683418 14.0976 1.31658 14.0976 1.70711 13.7071L0.292893 12.2929ZM7 7L7.70711 7.70711C8.09763 7.31658 8.09763 6.68342 7.70711 6.29289L7 7ZM1.70711 0.292893C1.31658 -0.0976315 0.683417 -0.0976314 0.292893 0.292893C-0.0976316 0.683417 -0.0976316 1.31658 0.292893 1.70711L1.70711 0.292893ZM1.70711 13.7071L7.70711 7.70711L6.29289 6.29289L0.292893 12.2929L1.70711 13.7071ZM7.70711 6.29289L1.70711 0.292893L0.292893 1.70711L6.29289 7.70711L7.70711 6.29289Z" fill="#1A1D1F"/>
+		</svg>
+	)
+}
+
 export {
 	Logo,
 	InputSearchIcon,
@@ -309,5 +326,7 @@ export {
 	SidebarBtn5,
 	SidebarBtn6,
 	IconOpened,
-	IconClosed
+	IconClosed,
+	BtnIcon,
+	ArrowRight	
 };

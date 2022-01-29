@@ -39,4 +39,66 @@
 		outline: none;
 		cursor: pointer;
 	}
+
+	&-input {
+		position: relative;
+		max-width: 360px;
+		margin-left: 25px;
+
+		.MuiInput-input {
+			width: 220px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 15px;
+			letter-spacing: -0.01em;
+			color: #9a9fa5;
+
+			background: #f4f4f4;
+			border-radius: 12px;
+			// display: flex;
+			// flex-direction: row;
+			// justify-content: space-between;
+			align-items: center;
+			padding: 12px 120px 12px 50px;
+			border: none;
+			outline: none;
+			position: relative;
+			caret-color: #2a85ff;
+		}
+
+		svg {
+			position: absolute;
+			z-index: 1;
+			top: 11px;
+			left: 40px;
+			width: 15px;
+			height: 15px;
+		}
+	}
+
+	&-button {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #6f767e;
+		padding: 10px 15px;
+		background: #fcfcfc;
+		border-radius: 8px;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		transition: all ease 0.4s;
+		margin: 0 10px;
+		&:last-child {
+			margin-right: 0;
+		}
+
+		&:hover {
+			background: #efefef;
+			color: #1a1d1f;
+		}
+	}
 }

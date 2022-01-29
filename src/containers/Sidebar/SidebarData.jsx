@@ -18,7 +18,7 @@ export const SidebarData = [
 
 	{
 		title: "Products",
-		path: "/products",
+		path: window.location,
 		icon: <SidebarBtn2 />,
 		iconClosed: <IconClosed />,
 		iconOpened: <IconOpened />,
@@ -50,7 +50,7 @@ export const SidebarData = [
 
 	{
 		title: "Customers",
-		path: "/customers",
+		path: window.location,
 		icon: <SidebarBtn3 />,
 		iconClosed: <IconClosed />,
 		iconOpened: <IconOpened />,
@@ -77,7 +77,7 @@ export const SidebarData = [
 
 	{
 		title: "Income",
-		path: "/settings",
+		path: window.location,
 		icon: <SidebarBtn5 />,
 		iconClosed: <IconClosed />,
 		iconOpened: <IconOpened />,
