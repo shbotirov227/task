@@ -1,10 +1,21 @@
 .CheckItem {
-	label {
-		width: 13%;
-	}
-
 	.MuiBox-root.css-agnjr6 {
 		margin: 0;
+	}
+
+	&-element {
+		transition: all ease 0.4s;
+		&:hover {
+			background: #f4f4f4;
+			border-radius: 8px;
+			.ProductItem-sale {
+				background: #fcfcfc;
+			}
+
+			.ProductItem-editIcons {
+				opacity: 1;
+			}
+		}
 	}
 
 	&-img {

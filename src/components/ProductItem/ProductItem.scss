@@ -1,10 +1,19 @@
 .ProductItem {
 	width: 100%;
-	// padding: 20px;
+	padding: 15px 15px 15px 50px;
 	box-sizing: border-box;
 	display: flex;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: space-between;
+	cursor: pointer;
+	position: relative;
+
+	.el {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		width: 22%;
+	}
 
 	&-title {
 		font-style: normal;
@@ -16,6 +25,12 @@
 		margin-bottom: 5px;
 	}
 
+	&-views {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
 	&-span {
 		font-style: normal;
 		font-weight: 600;
@@ -23,5 +38,118 @@
 		line-height: 16px;
 		letter-spacing: -0.01em;
 		color: #9a9fa5;
+	}
+
+	&-actives {
+		transition: all ease 0.4s;
+		svg {
+			width: 20px;
+			height: 20px;
+			margin-right: 25px;
+			background: #fcfcfc;
+			border-radius: 36px;
+			padding: 10px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	&-editIcons {
+		transition: all ease 0.4s;
+		opacity: 0;
+		position: absolute;
+		bottom: 10px;
+	}
+
+	&-Active {
+		width: 45px;
+		height: 100%;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #83bf6e;
+		padding: 0 10px;
+		background: #eafae4;
+		border-radius: 4px;
+		margin-right: 60px;
+	}
+
+	&-Deactive {
+		height: 100%;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #ff6a55;
+		padding: 0 10px;
+		background: #ffe7e4;
+		border-radius: 4px;
+		margin-right: 60px;
+	}
+
+	&-price {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #1a1d1f;
+	}
+
+	&-sale {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		text-align: center;
+		letter-spacing: -0.01em;
+		color: #1a1d1f;
+		padding: 0 8px;
+		background: #efefef;
+		border-radius: 6px;
+		margin-right: 10px;
+		transition: all ease 0.4s;
+	}
+
+	&-saleStatus {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 12px;
+		line-height: 16px;
+		letter-spacing: -0.01em;
+		color: #83bf6e;
+	}
+
+	&-viewsStatus {
+		background: #2a85ff;
+		border-radius: 2px;
+		height: 12px;
+		width: 20px;
+	}
+
+	&-views {
+		width: 8%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-likes {
+		width: 8%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-likesStatus {
+		background: #ff6a55;
+		border-radius: 2px;
+		height: 12px;
+		width: 40px;
 	}
 }
