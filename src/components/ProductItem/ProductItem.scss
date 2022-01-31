@@ -1,0 +1,27 @@
+.ProductItem {
+	width: 100%;
+	// padding: 20px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	&-title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #1a1d1f;
+		margin-bottom: 5px;
+	}
+
+	&-span {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: -0.01em;
+		color: #9a9fa5;
+	}
+}
