@@ -56,13 +56,13 @@ export const SidebarData = [
 		iconOpened: <IconOpened />,
 		subNav: [
 			{
-				title: "Released",
-				path: "/customers/released",
+				title: "Overview",
+				path: "/customers/overview",
 				icon: "",
 			},
 			{
-				title: "Scheduled",
-				path: "/customers/scheduled",
+				title: "Customer list",
+				path: "/customers/customer_list",
 				icon: "",
 				notification: 8,
 			},

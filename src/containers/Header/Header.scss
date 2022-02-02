@@ -45,7 +45,7 @@
 			border: none;
 			cursor: pointer;
 			position: absolute;
-			top: 7px;
+			top: 9px;
 			right: 35px;
 		}
 
@@ -64,17 +64,23 @@
 		align-items: center;
 		justify-content: flex-end;
 
-		.Header-right-btn {
+		&-btn {
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			background: #2a85ff;
 			border-radius: 12px;
 			font-style: normal;
 			font-weight: bold;
-			font-size: 11px;
-			line-height: 10px;
-			letter-spacing: -0.01em;
+			font-size: 12px;
+			line-height: 11px;
+			letter-spacing: 1px;
 			color: #fcfcfc;
-			padding: 15px 15px;
+			padding: 15px 20px;
 			margin-right: 10px;
+			outline: none;
+			border: none;
+			cursor: pointer;
 
 			svg {
 				width: 10px;

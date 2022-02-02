@@ -5,9 +5,16 @@
 
 	&-element {
 		transition: all ease 0.4s;
+
+		label {
+			margin: 0;
+			position: absolute;
+		}
+
 		&:hover {
 			background: #f4f4f4;
 			border-radius: 8px;
+
 			.ProductItem-sale {
 				background: #fcfcfc;
 			}

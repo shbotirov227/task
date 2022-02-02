@@ -24,21 +24,29 @@ const Header = () => {
 			</div>
 
 			<div className="Header-right">
-				<Button color="primary" className="Header-right-btn">
+				<button color="primary" className="Header-right-btn">
 					<PlusIcon />
 					Create
-				</Button>
+				</button>
 
-				<Button className="iconBtn">
-					<MessageIcon />
-				</Button>
+				<Link to="/messages_center" className="iconBtn">
+					<Button>
+						<MessageIcon />
+					</Button>
+				</Link>
 
-				<Button className="iconBtn">
-					<NotificationIcon />
-				</Button>
+				<Link to="/notification" className="iconBtn">
+					<Button>
+						<NotificationIcon />
+					</Button>
+				</Link>
 
 				<Link to="/settings">
-					<img src={CustomerImg} alt="customerImg" className="customerImg" />
+					<img
+						src={CustomerImg}
+						alt="customerImg"
+						className="customerImg"
+					/>
 				</Link>
 			</div>
 		</div>

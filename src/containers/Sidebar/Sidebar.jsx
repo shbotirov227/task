@@ -1,36 +1,56 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import { Logo } from "../../assets/icons/icons";
 import SidebarBtn from "../../components/SidebarBtn/SidebarBtn";
 import { SidebarData } from "./SidebarData";
-import { IconOpened, IconClosed } from "../../assets/icons/icons";
+import { DarkIcon, FooterIcon, LightIcon, Logo } from "../../assets/icons/icons";
 
 import "./Sidebar.scss";
 
 const Sidebar = () => {
+	const [active, setActive] = useState([true, false]);
+
 	return (
 		<div className="Sidebar">
-			<Link to="/" className="Logo">
-				<Logo />
-			</Link>
-			<div style={{ marginTop: "50px" }}>
-				{SidebarData.map((el, index) => (
-					<SidebarBtn
-						item={el}
-						path={el.path}
-						title={el.title}
-						icon={el.icon}
-						key={index}
-						itemSubnav={el.subNav}
-						openIcon={IconOpened}
-						closeIcon={IconClosed}
-					/>
-				))}
+			<div>
+				<Link to="/" className="Logo">
+					<Logo />
+				</Link>
+				<div style={{ marginTop: "50px" }}>
+					{SidebarData.map((el, index) => (
+						<SidebarBtn
+							key={index}
+							item={el}
+							path={el.path}
+							title={el.title}
+							icon={el.icon}
+							itemSubnav={el.subNav}
+						/>
+					))}
+				</div>
 			</div>
 
 			<div className="Sidebar-footer">
-				<h4>Help & getting started</h4>
-				<span>8</span>
+				<div className="Sidebar-footer-top">
+					<FooterIcon />
+					<h4>Help & getting started</h4>
+					<span>8</span>
+				</div>
+
+				<div className="Sidebar-footer-buttons">
+					<button
+						className={`btn ${active[0] ? "active" : undefined}`}
+						onClick={() => setActive([true, false])}>
+						<LightIcon />
+						Light
+					</button>
+					<button
+						className={`btn ${active[1] ? "active" : undefined}`}
+						onClick={() => setActive([false, true])}>
+						<DarkIcon />
+						Dark
+					</button>
+				</div>
 			</div>
 		</div>
 	);

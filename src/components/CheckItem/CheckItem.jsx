@@ -2,6 +2,15 @@ import React from "react";
 import { Box, Checkbox, FormControlLabel } from "@mui/material";
 import ProductItem from "../ProductItem/ProductItem";
 import CheckItemImg1 from "../../assets/images/checkItemImg1.png";
+import CheckItemImg2 from "../../assets/images/checkItemImg2.png";
+import CheckItemImg3 from "../../assets/images/checkItemImg3.png";
+import CheckItemImg4 from "../../assets/images/checkItemImg4.png";
+import CheckItemImg5 from "../../assets/images/checkItemImg5.png";
+import CheckItemImg6 from "../../assets/images/checkItemImg6.png";
+import CheckItemImg7 from "../../assets/images/checkItemImg7.png";
+import CheckItemImg8 from "../../assets/images/checkItemImg8.png";
+import CheckItemImg9 from "../../assets/images/checkItemImg9.png";
+import CheckItemImg10 from "../../assets/images/checkItemImg10.png";
 
 import "./CheckItem.scss";
 
@@ -23,7 +32,7 @@ const data = [
 
 	{
 		id: 2,
-		img: CheckItemImg1,
+		img: CheckItemImg2,
 		title: "Bento Matte 3D Illustration",
 		span: "UI design kit",
 		status: "Active",
@@ -38,7 +47,7 @@ const data = [
 
 	{
 		id: 3,
-		img: CheckItemImg1,
+		img: CheckItemImg3,
 		title: "Bento Matte 3D Illustration",
 		span: "UI design kit",
 		status: "Deactive",
@@ -53,7 +62,7 @@ const data = [
 
 	{
 		id: 4,
-		img: CheckItemImg1,
+		img: CheckItemImg4,
 		title: "Bento Matte 3D Illustration",
 		span: "UI design kit",
 		status: "Active",
@@ -68,7 +77,7 @@ const data = [
 
 	{
 		id: 5,
-		img: CheckItemImg1,
+		img: CheckItemImg5,
 		title: "Bento Matte 3D Illustration",
 		span: "UI design kit",
 		status: "Deactive",
@@ -83,7 +92,7 @@ const data = [
 
 	{
 		id: 6,
-		img: CheckItemImg1,
+		img: CheckItemImg6,
 		title: "Bento Matte 3D Illustration",
 		span: "UI design kit",
 		status: "Active",
@@ -98,7 +107,7 @@ const data = [
 
 	{
 		id: 7,
-		img: CheckItemImg1,
+		img: CheckItemImg7,
 		title: "Bento Matte 3D Illustration",
 		span: "UI design kit",
 		status: "Deactive",
@@ -113,7 +122,7 @@ const data = [
 
 	{
 		id: 8,
-		img: CheckItemImg1,
+		img: CheckItemImg8,
 		title: "Bento Matte 3D Illustration",
 		span: "UI design kit",
 		status: "Active",
@@ -128,7 +137,7 @@ const data = [
 
 	{
 		id: 9,
-		img: CheckItemImg1,
+		img: CheckItemImg9,
 		title: "Bento Matte 3D Illustration",
 		span: "UI design kit",
 		status: "Deactive",
@@ -143,7 +152,7 @@ const data = [
 
 	{
 		id: 10,
-		img: CheckItemImg1,
+		img: CheckItemImg10,
 		title: "Bento Matte 3D Illustration",
 		span: "UI design kit",
 		status: "Deactive",
@@ -158,14 +167,12 @@ const data = [
 ];
 
 const CheckItem = () => {
-	const [checked, setChecked] = React.useState([true, false]);
+	const [checked, setChecked] = React.useState(false);
 
-	const handleChange1 = (event) =>
-		setChecked([event.target.checked, event.target.checked]);
-		const handleChange3 = (event) =>
-		setChecked([checked[0], event.target.checked]);
-		const handleChange2 = (event) =>
-			setChecked([event.target.checked, checked[1]]);
+	const handleChange1 = (event) => setChecked(!checked);
+	// const handleChange3 = (event) =>
+	// 	setChecked([checked[0], event.target.checked]);
+	const handleChange2 = (event) => setChecked(event.target.checked);
 
 	const children = (
 		<Box sx={{ display: "flex", flexDirection: "column", ml: 3 }}>
@@ -177,8 +184,8 @@ const CheckItem = () => {
 							label=""
 							control={
 								<Checkbox
-									checked={checked[0]}
-									onChange={handleChange2}
+									checked={checked[index]}
+									onChange={handleChange1}
 								/>
 							}
 						/>
@@ -200,13 +207,6 @@ const CheckItem = () => {
 					</div>
 				);
 			})}
-
-			<FormControlLabel
-				label="Child 2"
-				control={
-					<Checkbox checked={checked[1]} onChange={handleChange3} />
-				}
-			/>
 		</Box>
 	);
 
@@ -216,9 +216,8 @@ const CheckItem = () => {
 				label="Product"
 				control={
 					<Checkbox
-						checked={checked[0] && checked[1]}
 						// indeterminate={checked[0] !== checked[1]}
-						onChange={handleChange1}
+						onChange={handleChange2}
 					/>
 				}
 			/>

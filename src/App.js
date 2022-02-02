@@ -1,13 +1,13 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
-import { HomePage, SettingsPage, SignUp } from "./pages/index.js";
+import { HomePage, SettingsPage, SignUp, MessageCenter } from "./pages/index.js";
+import Sidebar from "./containers/Sidebar/Sidebar";
+import Header from "./containers/Header/Header";
 
 import "../src/assets/main.scss";
-import Sidebar from "./containers/Sidebar/Sidebar.jsx";
-import Header from "./containers/Header/Header.jsx";
 
 function App() {
+
 	return (
 		<React.Fragment>
 			<div className="App">
@@ -20,6 +20,7 @@ function App() {
 								<Route exact path="/" element={<HomePage />} />
 								<Route path="/settings" element={<SettingsPage />} />
 								<Route path="/signup" element={<SignUp />} />
+								<Route path="/messages_center" element={<MessageCenter />} />
 							</Routes>
 						</div>
 					</div>
