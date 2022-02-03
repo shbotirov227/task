@@ -39,13 +39,13 @@ const Sidebar = () => {
 
 				<div className="Sidebar-footer-buttons">
 					<button
-						className={`btn ${active[0] ? "active" : undefined}`}
+						className={`btn ${active[0] ? "active" : ""}`}
 						onClick={() => setActive([true, false])}>
 						<LightIcon />
 						Light
 					</button>
 					<button
-						className={`btn ${active[1] ? "active" : undefined}`}
+						className={`btn ${active[1] ? "active" : ""}`}
 						onClick={() => setActive([false, true])}>
 						<DarkIcon />
 						Dark

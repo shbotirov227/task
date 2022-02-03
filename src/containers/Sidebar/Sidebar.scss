@@ -1,5 +1,5 @@
 .Sidebar {
-	width: 18%;
+	width: 15%;
 	background-color: #fcfcfc;
 	padding: 25px;
 	display: flex;
@@ -20,7 +20,13 @@
 		&-top {
 			display: flex;
 			align-items: center;
-			justify-content: space-between;
+			justify-content: flex-start;
+
+			svg {
+				width: 9%;
+				height: 9%;
+				margin-right: 10px;
+			}
 		}
 
 		&-buttons {
@@ -40,7 +46,7 @@
 				justify-content: center;
 				font-style: normal;
 				font-weight: 600;
-				font-size: 15px;
+				font-size: 14px;
 				line-height: 24px;
 				letter-spacing: -0.01em;
 				color: #6f767e;
@@ -48,7 +54,6 @@
 				border: none;
 				outline: none;
 				padding: 5px 12px;
-				height: 35px;
 				cursor: pointer;
 				transition: all ease 0.4s;
 				background-color: transparent;
@@ -76,22 +81,23 @@
 		h4 {
 			font-style: normal;
 			font-weight: 600;
-			font-size: 14px;
+			font-size: 13px;
 			line-height: 24px;
 			letter-spacing: -0.01em;
 			color: #6f767e;
+			margin-right: 15px;
 		}
 		span {
 			font-style: normal;
 			font-weight: 600;
-			font-size: 15px;
+			font-size: 12px;
 			line-height: 24px;
 			text-align: center;
 			letter-spacing: -0.01em;
 			color: #1a1d1f;
 			background: #cabdff;
 			border-radius: 6px;
-			padding: 3px 8px;
+			padding: 0 7px;
 		}
 	}
 }

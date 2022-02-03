@@ -1,12 +1,20 @@
 .Header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	background: #fcfcfc;
 	box-shadow: inset 1px 0px 0px #f4f4f4;
 	padding: 25px 40px;
 	width: 100%;
 	box-sizing: border-box !important;
+	position: relative;
+	right: 0;
+	left: 0;
+	margin: auto;
+
+	&-inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 80%;
+	}
 
 	&-input {
 		position: relative;

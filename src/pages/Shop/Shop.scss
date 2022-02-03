@@ -1,0 +1,68 @@
+.Shop {
+	width: 100%;
+	padding: 40px;
+	box-sizing: border-box;
+
+	&-inner {
+		padding: 30px;
+		background: #fcfcfc;
+		border-radius: 8px;
+		box-sizing: border-box;
+	}
+
+	.ShopCards {
+		padding-bottom: 25px;
+		border-bottom: 1px solid #efefef;
+		margin-bottom: 35px;
+		max-width: 100%;
+	}
+
+	&-title {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 48px;
+		letter-spacing: -0.02em;
+		color: #272b30;
+		margin-bottom: 25px;
+		margin-top: 15px;
+	}
+
+	&-span {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: -0.01em;
+		color: #9a9fa5;
+		margin-bottom: 15px;
+	}
+
+	&-loadBtn {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #1a1d1f;
+		background: #fcfcfc;
+		border: 2px solid #efefef;
+		box-sizing: border-box;
+		border-radius: 8px;
+		padding: 6px 15px;
+		cursor: pointer;
+		position: relative;
+		right: 0;
+		left: 0;
+		margin: 0 auto 25px auto;
+
+		svg {
+			width: 25px;
+			height: 25px;
+			margin-right: 10px;
+		}
+	}
+}

@@ -67,25 +67,15 @@ const SettingsPage = () => {
 				<div className="SettingsPage-left">
 					<button className="SettingsPage-left-btn">Basics</button>
 					<button className="SettingsPage-left-btn">Account</button>
-					<button className="SettingsPage-left-btn">
-						Notifications
-					</button>
+					<button className="SettingsPage-left-btn">Notifications</button>
 					<button className="SettingsPage-left-btn">Payment</button>
 				</div>
 
 				<div className="SettingsPage-right">
-					<CardTitle
-						title="Profile information"
-						color="#B5E4CA"
-						margin="35px"
-					/>
+					<CardTitle title="Profile information" color="#B5E4CA" margin="35px" />
 
 					<div className="SettingsPage-right-top">
-						<img
-							src={CustomerImg}
-							className="SettingsPage-right-img"
-							alt=""
-						/>
+						<img src={CustomerImg} className="SettingsPage-right-img" alt="" />
 						<button className="SettingsPage-right-btn">
 							<PlusIcon />
 							Upload new picture
@@ -185,7 +175,8 @@ const SettingsPage = () => {
 							/>
 						</div>
 
-							<CardTitle title="Payment" color="#B5E4CA" margin="35px" />
+						<CardTitle title="Payment" color="#B5E4CA" margin="35px" />
+
 						<div className="SettingsPage-payment">
 
 							<div className="SettingsPage-payment-titleZone">
@@ -196,6 +187,7 @@ const SettingsPage = () => {
 							<p>Payout fee is 1% of the amount transferred, with a minimum of USD $0.25 and a maximum of USD $20</p>
 							<button className="SettingsPage-right-btn">Save</button>
 						</div>
+						
 					</main>
 				</div>
 			</div>

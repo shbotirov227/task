@@ -5,6 +5,7 @@
 
 body {
 	font-family: "Inter", san-serif;
+	background-color: rgb(244, 244, 244);
 }
 
 h1,
@@ -26,6 +27,13 @@ a {
 	max-width: 1500px;
 	width: 100%;
 	padding: 0 15px;
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+
+.mini-container {
+	max-width: 1200px;
+	width: 100%;
 	margin: 0 auto;
 	box-sizing: border-box;
 }

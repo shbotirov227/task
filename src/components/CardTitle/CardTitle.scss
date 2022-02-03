@@ -8,6 +8,7 @@
 		align-items: center;
 		justify-content: flex-start;
 	}
+
 	&-color {
 		width: 16px;
 		height: 32px;
@@ -38,6 +39,34 @@
 		padding: 8px 26px 8px 16px;
 		outline: none;
 		cursor: pointer;
+	}
+
+	&-typeBtns {
+		display: flex;
+		align-items: center;
+
+		.CardTitle-typeBtn {
+			font-style: normal;
+			font-weight: 600;
+			font-size: 15px;
+			line-height: 24px;
+			letter-spacing: -0.01em;
+			color: #6f767e;
+			padding: 8px 15px;
+			margin-right: 10px;
+			background: #fcfcfc;
+			border-radius: 8px;
+			border: none;
+			outline: none;
+			cursor: pointer;
+			transition: all ease 0.4s;
+
+			&.active {
+				color: #1a1d1f;
+				background: #efefef;
+				border-radius: 8px;
+			}
+		}
 	}
 
 	&-input {

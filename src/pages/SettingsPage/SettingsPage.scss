@@ -62,7 +62,7 @@
 				.SettingsPage-label {
 					display: flex;
 					align-items: center;
-					
+
 					svg {
 						margin-left: 10px;
 						width: 15px;
@@ -133,6 +133,7 @@
 				cursor: pointer;
 				border: none;
 				outline: none;
+				transition: all ease 0.4s;
 
 				&.removeBtn {
 					width: 100px;
@@ -141,10 +142,14 @@
 					box-sizing: border-box;
 					color: #1a1d1f;
 					margin: 0;
+
+					&:hover {
+						background: #efefef;
+					}
 				}
 
 				&.update {
-					width: 22%;
+					width: 25%;
 				}
 
 				svg {
