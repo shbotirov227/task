@@ -4,7 +4,7 @@ import "./CustomerOverview.scss";
 const CustomerOverview = () => {
 	return (
 		<div className="CustomerOverview">
-			<h2>Customers</h2>
+			<h3 className="CustomerOverview-title">Customers</h3>
 		</div>
 	);
 };

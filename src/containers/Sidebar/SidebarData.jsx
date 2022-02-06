@@ -98,7 +98,7 @@ export const SidebarData = [
 
 	{
 		title: "Promote",
-		path: "/promote",
+		path: "/signup",
 		icon: <SidebarBtn6 />,
 	},
 ];

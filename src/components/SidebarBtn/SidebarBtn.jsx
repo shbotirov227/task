@@ -6,12 +6,13 @@ import { IconOpened, IconClosed, BtnIcon, ArrowRight } from "../../assets/icons/
 import "./SidebarBtn.scss";
 
 const SidebarBtn = ({ path, title, icon, itemSubnav }) => {
-	const [subnav, setSubnav] = useState(false);
+	const [ subnav, setSubnav ] = useState(false);
+	const [ activePage, setActivePage ] = useState(false);
 
 	const showSubnav = () => setSubnav(!subnav);
 
 	return (
-		<Link className="SidebarBtn" to={path} onClick={itemSubnav && showSubnav}>
+		<Link className={`SidebarBtn ${activePage ? "activePage" : ""}`} to={path} onClick={itemSubnav && showSubnav}>
 			<div className="SidebarBtn-inner">
 				<span className="SidebarBtn-title">{icon}{title}</span>
 

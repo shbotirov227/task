@@ -27,7 +27,7 @@ const Header = () => {
 						<Button><MessageIcon /></Button>
 					</Link>
 
-					<Link to="/notification" className="iconBtn">
+					<Link to="/" className="iconBtn">
 						<Button><NotificationIcon /></Button>
 					</Link>
 

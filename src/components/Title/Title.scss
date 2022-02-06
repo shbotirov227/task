@@ -1,0 +1,15 @@
+.Title {
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+
+	&-title {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #33383f;
+		margin-left: 20px;
+	}
+}

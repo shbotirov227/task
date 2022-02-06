@@ -1,18 +1,16 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {
-	HomePage,
-	SettingsPage,
-	SignUp,
-	Shop,
-	MessageCenter,
-} from "./pages/index.js";
+import { Dashboard, SettingsPage, SignUp, Shop, MessageCenter, CustomerOverview, UpgradePage } from "./pages/index.js";
 import Sidebar from "./containers/Sidebar/Sidebar";
 import Header from "./containers/Header/Header";
 
 import "../src/assets/main.scss";
 
 function App() {
+	// const [enter, setEnter] = useState(false);
+
+	// const handle = (props) => window.location.pathname === "/signup" ? setEnter(true) : undefined;
+
 	return (
 		<React.Fragment>
 			<div className="App">
@@ -23,11 +21,13 @@ function App() {
 							<Header />
 							<div className="mini-container">
 								<Routes>
-									<Route exact path="/" element={<HomePage />} />
+									<Route exact path="/" element={<UpgradePage />} />
+									<Route path="/products/dashboard" element={<Dashboard />} />
 									<Route path="/settings" element={<SettingsPage />} />
 									<Route path="/signup" element={<SignUp />} />
 									<Route path="/shop" element={<Shop />} />
 									<Route path="/messages_center" element={<MessageCenter />} />
+									<Route path="/customers/overview" element={<CustomerOverview />} />
 								</Routes>
 							</div>
 						</div>

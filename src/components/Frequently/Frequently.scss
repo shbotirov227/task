@@ -1,0 +1,76 @@
+.Frequently {
+	width: 100%;
+	box-sizing: border-box;
+
+	&-title {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 48px;
+		letter-spacing: -0.02em;
+		color: #272b30;
+		margin: 40px 0 25px 0;
+	}
+
+	&-inner {
+		width: 100%;
+		background: #fcfcfc;
+		border-radius: 8px;
+		padding: 50px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		box-sizing: border-box;
+
+		.Frequently-left {
+			width: 30%;
+
+			&-btn {
+				text-align: left;
+				width: 90%;
+				font-style: normal;
+				font-weight: 600;
+				font-size: 15px;
+				line-height: 24px;
+				letter-spacing: -0.01em;
+				color: #6f767e;
+				border: none;
+				outline: none;
+				background-color: transparent;
+				border-radius: 8px;
+				padding: 8px 16px;
+				cursor: pointer;
+				transition: all ease 0.4s;
+				margin-bottom: 10px;
+
+				&:hover {
+					color: #1a1d1f;
+					background-color: #efefef;
+				}
+			}
+		}
+
+		.Frequently-right {
+			width: 90%;
+
+			.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+				background: transparent;
+				box-shadow: none;
+				&:before {
+					background: none;
+				}
+				.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root {
+					border-bottom: 1px solid #efefef;
+					margin-bottom: 25px;
+				}
+
+				.css-ahj2mt-MuiTypography-root {
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+				}
+			}
+		}
+	}
+}

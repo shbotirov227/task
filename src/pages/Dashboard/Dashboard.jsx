@@ -2,13 +2,13 @@ import Activity from "../../containers/Activity/Activity";
 import Overview from "../../containers/Overview/Overview";
 import Products from "../../containers/Products/Products";
 
-import "./HomePage.scss";
+import "./Dashboard.scss";
 
-const HomePage = () => {
+const Dashboard = () => {
 	return (
-		<div className="HomePage">
-			<div className="HomePage-inner">
-				<h3 className="HomePage-title">Products dashboard</h3>
+		<div className="Dashboard">
+			<div className="Dashboard-inner">
+				<h3 className="Dashboard-title">Products dashboard</h3>
 				<Overview />
 				<Activity />
 				<Products />
@@ -17,4 +17,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default Dashboard;

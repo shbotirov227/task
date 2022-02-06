@@ -9,7 +9,7 @@ const ShopCard = ({ userImg, userName, userIndex, userProduct, userFollower, col
         dots: false,
         infinite: true,
         speed: 500,
-		autoplay: true,
+		autoplay: false,
         slidesToShow: 4,
         slidesToScroll: 4,
 		control: false,

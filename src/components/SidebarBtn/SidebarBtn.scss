@@ -11,6 +11,14 @@
 	cursor: pointer;
 	box-sizing: border-box;
 
+	&.activePage {
+		background: #efefef;
+		box-shadow: inset 0px -2px 1px rgb(0 0 0 / 5%),
+			inset 0px 1px 1px #ffffff;
+		border-radius: 12px;
+		color: #1a1d1f;
+	}
+
 	&-inner {
 		background-color: transparent;
 		margin-bottom: 10px;
