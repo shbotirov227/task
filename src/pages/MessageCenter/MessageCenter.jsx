@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { InputUnstyled } from "@mui/material";
 import Account from "../../components/Account/Account";
 import AccountImg1 from "../../assets/images/shopCardImg2.png";
 import AccountImg2 from "../../assets/images/shopCardImg1.png";
@@ -6,18 +8,10 @@ import AccountImg3 from "../../assets/images/shopCardImg3.png";
 import AccountImg4 from "../../assets/images/shopCardImg4.png";
 import AccountImg5 from "../../assets/images/shopCardImg5.png";
 import CustomerImg from "../../assets/images/customerImg.png";
-import {
-	ChatDots,
-	InputSearchIcon,
-	MsgIcon1,
-	MsgIcon2,
-	SendIcon1,
-	SendIcon2,
-} from "../../assets/icons/icons";
-import { InputUnstyled } from "@mui/material";
+import { ChatDots, InputSearchIcon, MsgIcon1, MsgIcon2, SendIcon1, SendIcon2 } from "../../assets/icons/icons";
 
 import "./MessageCenter.scss";
-import { Link } from "react-router-dom";
+
 
 const data = [
 	{
@@ -187,14 +181,21 @@ const MessageCenter = () => {
 							</div>
 						</div>
 
-						<SendIcon1 />
-						<SendIcon2 />
-						<InputUnstyled
-							type="text"
-							placeholder="Search message"
-							className="Header-input"
-						/>
-						<button>Send</button>
+						<div className="msgInput" style={{ display: "flex", alignitems: "center", justifyContent: "space-between"}}>
+							<div className="msgInput-icons">
+								<SendIcon1 />
+								<SendIcon2 />
+							</div>
+
+							<div className="msgInput-text">
+								<InputUnstyled
+									type="text"
+									placeholder="Search message"
+									className="msgInput-input"
+								/>
+								<button className="msgInput-btn">Send</button>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

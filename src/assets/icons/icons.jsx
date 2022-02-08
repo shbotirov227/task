@@ -524,6 +524,15 @@ const SendIcon2 = () => {
 	)
 }
 
+const UserStatusIcon = () => {
+	return (
+		<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect x="2" y="2" width="16" height="16" rx="8" fill="#83BF6E"/>
+			<rect x="2" y="2" width="16" height="16" rx="8" stroke="#EFEFEF" stroke-width="4"/>
+		</svg>
+	)
+}
+
 export {
 	Logo,
 	InputSearchIcon,
@@ -569,5 +578,6 @@ export {
 	Dot,
 	ChatDots,
 	SendIcon1,
-	SendIcon2
+	SendIcon2,
+	UserStatusIcon
 };

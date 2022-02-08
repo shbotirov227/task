@@ -1,11 +1,11 @@
 import React from "react";
-import { Dot } from "../../assets/icons/icons";
+import { Dot, UserStatusIcon } from "../../assets/icons/icons";
 import "./Account.scss";
 
 const Account = ({ img, name, text, date, fill, status }) => {
 	return (
 		<div className="Account">
-			{status ? <span className="Account-status"></span> : undefined}
+			{status ? <span className="Account-status">{<UserStatusIcon />}</span> : undefined}
 			<img className="Account-img" src={img} alt="" />
 
 			<div className="Account-titles">
