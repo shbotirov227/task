@@ -1,6 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Dashboard, SettingsPage, SignUp, Shop, MessageCenter, CustomerOverview, UpgradePage } from "./pages/index.js";
+import {
+	Dashboard,
+	SettingsPage,
+	SignUp,
+	Shop,
+	MessageCenter,
+	CustomerOverview,
+	UpgradePage,
+} from "./pages/index.js";
 import Sidebar from "./containers/Sidebar/Sidebar";
 import Header from "./containers/Header/Header";
 
@@ -21,13 +29,36 @@ function App() {
 							<Header />
 							<div className="mini-container">
 								<Routes>
-									<Route exact path="/" element={<UpgradePage />} />
-									<Route path="/products/dashboard" element={<Dashboard />} />
-									<Route path="/settings" element={<SettingsPage />} />
-									<Route path="/signup" element={<SignUp />} />
+									<Route
+										exact
+										path="/"
+										element={<Dashboard />}
+									/>
+									<Route
+										path="/products/dashboard"
+										element={<Dashboard />}
+									/>
+									<Route
+										path="/settings"
+										element={<SettingsPage />}
+									/>
+									<Route
+										path="/signup"
+										element={<SignUp />}
+									/>
 									<Route path="/shop" element={<Shop />} />
-									<Route path="/messages_center" element={<MessageCenter />} />
-									<Route path="/customers/overview" element={<CustomerOverview />} />
+									<Route
+										path="/messages_center"
+										element={<MessageCenter />}
+									/>
+									<Route
+										path="/customers/overview"
+										element={<CustomerOverview />}
+									/>
+									<Route
+										path="/upgrade"
+										element={<UpgradePage />}
+									/>
 								</Routes>
 							</div>
 						</div>

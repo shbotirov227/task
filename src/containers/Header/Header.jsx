@@ -7,7 +7,7 @@ import {
 	PlusIcon,
 } from "../../assets/icons/icons";
 import CustomerImg from "../../assets/images/customerImg.png";
-
+import {UpgradePage} from "../../pages/index";
 import "./Header.scss";
 
 const Header = () => {
@@ -27,7 +27,7 @@ const Header = () => {
 						<Button><MessageIcon /></Button>
 					</Link>
 
-					<Link to="/" className="iconBtn">
+					<Link to="/upgrade" className="iconBtn">
 						<Button><NotificationIcon /></Button>
 					</Link>
 
