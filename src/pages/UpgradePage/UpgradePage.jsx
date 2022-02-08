@@ -73,9 +73,7 @@ const UpgradePage = () => {
 						]}
 					/>
 
-					<button className="monthly-btn upradeBtn">
-						Upgrade now
-					</button>
+					<button className="monthly-btn upradeBtn">Upgrade now</button>
 				</div>
 			</div>
 

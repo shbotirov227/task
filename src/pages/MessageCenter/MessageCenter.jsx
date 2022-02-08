@@ -8,10 +8,16 @@ import AccountImg3 from "../../assets/images/shopCardImg3.png";
 import AccountImg4 from "../../assets/images/shopCardImg4.png";
 import AccountImg5 from "../../assets/images/shopCardImg5.png";
 import CustomerImg from "../../assets/images/customerImg.png";
-import { ChatDots, InputSearchIcon, MsgIcon1, MsgIcon2, SendIcon1, SendIcon2 } from "../../assets/icons/icons";
+import {
+	ChatDots,
+	InputSearchIcon,
+	MsgIcon1,
+	MsgIcon2,
+	SendIcon1,
+	SendIcon2,
+} from "../../assets/icons/icons";
 
 import "./MessageCenter.scss";
-
 
 const data = [
 	{
@@ -20,7 +26,7 @@ const data = [
 		date: "03:30PM",
 		text: "When do you release the coded...",
 		fill: "#2A85FF",
-		onlineStatus: false,
+		status: false,
 	},
 
 	{
@@ -29,7 +35,7 @@ const data = [
 		date: "11:59AM",
 		text: "When do you release the coded...",
 		fill: "#9A9FA5",
-		onlineStatus: true,
+		status: true,
 	},
 
 	{
@@ -38,7 +44,7 @@ const data = [
 		date: "09:30AM",
 		text: "When do you release the coded...",
 		fill: "#2A85FF",
-		onlineStatus: false,
+		status: false,
 	},
 
 	{
@@ -47,7 +53,7 @@ const data = [
 		date: "08:00AM",
 		text: "When do you release the coded...",
 		fill: "#9A9FA5",
-		onlineStatus: false,
+		status: false,
 	},
 
 	{
@@ -56,7 +62,7 @@ const data = [
 		date: "07:01AM",
 		text: "When do you release the coded...",
 		fill: "#9A9FA5",
-		onlineStatus: false,
+		status: false,
 	},
 ];
 
@@ -92,7 +98,7 @@ const MessageCenter = () => {
 							date={el.date}
 							text={el.text}
 							fill={el.fill}
-							onlineStatus={el.onlineStatus}
+							status={el.status}
 						/>
 					))}
 
@@ -181,7 +187,7 @@ const MessageCenter = () => {
 							</div>
 						</div>
 
-						<div className="msgInput" style={{ display: "flex", alignitems: "center", justifyContent: "space-between"}}>
+						<div className="msgInput">
 							<div className="msgInput-icons">
 								<SendIcon1 />
 								<SendIcon2 />

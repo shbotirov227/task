@@ -1,60 +1,62 @@
 .Account {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    border-radius: 12px;
-    padding: 15px;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: all ease 0.4;
-    position: relative;
-    &:hover {
-        background: #efefef;
-    }
-    &-status {
-        position: absolute;
-        left: 0;
-    }
-    ;
-    &-img {
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-    }
-    &-name {
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 24px;
-        letter-spacing: -0.01em;
-        color: #1a1d1f;
-    }
-    &-date {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 13px;
-        line-height: 16px;
-        letter-spacing: -0.01em;
-        color: #9a9fa5;
-        svg {
-            margin-left: 12px;
-        }
-    }
-    &-text {
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 24px;
-        letter-spacing: -0.015em;
-        color: #6f767e;
-    }
-    &-titles {
-        &-top {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-bottom: 5px;
-        }
-    }
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	border-radius: 12px;
+	padding: 15px;
+	box-sizing: border-box;
+	cursor: pointer;
+	transition: all ease 0.4s;
+	position: relative;
+	&:hover {
+		background: #efefef;
+	}
+	&-status {
+		position: absolute;
+		left: 15px;
+		top: 12px;
+		width: 12px;
+		height: 12px;
+	}
+	&-img {
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+	}
+	&-name {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: -0.01em;
+		color: #1a1d1f;
+	}
+	&-date {
+		font-style: normal;
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 16px;
+		letter-spacing: -0.01em;
+		color: #9a9fa5;
+		svg {
+			margin-left: 12px;
+		}
+	}
+	&-text {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 15px;
+		line-height: 24px;
+		letter-spacing: -0.015em;
+		color: #6f767e;
+	}
+	&-titles {
+		&-top {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 5px;
+		}
+	}
 }

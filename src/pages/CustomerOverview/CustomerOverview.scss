@@ -12,4 +12,14 @@
 		margin-bottom: 25px;
 		margin-top: 15px;
 	}
+
+	&-inner {
+		.CustomerOverview-left {
+			width: 60%;
+		}
+
+		.CustomerOverview-right {
+			width: 40%;
+		}
+	}
 }
