@@ -11,7 +11,7 @@ import "./Overview.scss";
 import CardTitle from "../../components/CardTitle/CardTitle";
 
 const Overview = () => {
-	return (
+	return ( 
 		<div className="Overview">
 			<CardTitle
 				title="Overview"

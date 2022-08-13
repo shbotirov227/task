@@ -14,7 +14,7 @@ const TotalCard = () => {
 				select={[
 					"Last 28 days",
 					"Last 28 days",
-					"Last 28 days",
+					"Last 28 days", 
 					"Last 28 days",
 				]}
 			/>

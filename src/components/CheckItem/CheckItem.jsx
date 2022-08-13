@@ -11,7 +11,7 @@ import CheckItemImg7 from "../../assets/images/checkItemImg7.png";
 import CheckItemImg8 from "../../assets/images/checkItemImg8.png";
 import CheckItemImg9 from "../../assets/images/checkItemImg9.png";
 import CheckItemImg10 from "../../assets/images/checkItemImg10.png";
-
+ 
 import "./CheckItem.scss";
 
 const data = [

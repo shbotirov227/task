@@ -14,6 +14,6 @@ export {
 	SignIn,
 	Shop,
 	MessageCenter,
-	CustomerOverview,
+	CustomerOverview, 
 	UpgradePage,
 };

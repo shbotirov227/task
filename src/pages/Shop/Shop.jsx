@@ -24,7 +24,7 @@ import ShopCardImg14 from "../../assets/images/shopCardCarouselImg14.png";
 import { LoadIcon } from "../../assets/icons/icons";
 
 import "./Shop.scss";
-
+  
 const data = [
 	{
 		id: 0,

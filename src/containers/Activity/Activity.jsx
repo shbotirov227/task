@@ -13,7 +13,7 @@ const Activity = () => {
 				statusColor={["#B5E4CA", "#CABDFF", "#B1E5FC", "#FFD88D"]}
 			/>
 			<ViewsChart />
-		</div>
+		</div> 
 	);
 };
 

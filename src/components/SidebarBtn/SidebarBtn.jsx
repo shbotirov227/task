@@ -10,7 +10,7 @@ const SidebarBtn = ({ path, title, icon, itemSubnav }) => {
 	const [ activePage, setActivePage ] = useState(false);
 
 	const showSubnav = () => setSubnav(!subnav);
-
+ 
 	return (
 		<Link className={`SidebarBtn ${activePage ? "activePage" : ""}`} to={path} onClick={itemSubnav && showSubnav}>
 			<div className="SidebarBtn-inner">

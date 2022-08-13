@@ -10,7 +10,7 @@ const SettingsPage = () => {
 	const IOSSwitch = styled((props) => (
 		<Switch focusVisibleClassName=".Mui-focusVisible" disableRipple {...props} />
 	  ))(({ theme }) => ({
-		width: 42,
+		width: 42, 
 		height: 26,
 		padding: 0,
 		'& .MuiSwitch-switchBase': {

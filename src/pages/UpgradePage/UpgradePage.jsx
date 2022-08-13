@@ -18,7 +18,7 @@ const UpgradePage = () => {
 						<span className="UpgradePage-innerSpan">
 							Basic shop and tools to set up your profile
 						</span>
-					</div>
+					</div> 
 
 					<div className="monthly">
 						<h4 className="monthly-title">8%</h4>

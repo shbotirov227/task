@@ -10,7 +10,7 @@ import "./Sidebar.scss";
 const Sidebar = () => {
 	const [active, setActive] = useState([true, false]);
 
-	return (
+	return ( 
 		<div className="Sidebar">
 			<div>
 				<Link to="/" className="Logo">

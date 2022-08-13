@@ -11,7 +11,7 @@ const OverviewCard = ({
 	img,
 	title,
 	total,
-	status,
+	status, 
 	statusIcon,
 	statusColor,
 	up,

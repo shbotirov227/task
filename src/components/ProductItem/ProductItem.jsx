@@ -13,7 +13,7 @@ const ProductItem = ({
 	title,
 	span,
 	status,
-	img,
+	img, 
 	up,
 	price,
 	down,

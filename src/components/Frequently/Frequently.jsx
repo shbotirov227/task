@@ -10,7 +10,7 @@ import "./Frequently.scss";
 
 const Frequently = () => {
 	const [active, setActive] = useState(false);
-
+ 
 	return (
 		<div className="Frequently">
 			<h3 className="Frequently-title">Frequently asked question</h3>

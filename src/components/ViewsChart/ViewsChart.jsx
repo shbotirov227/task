@@ -12,7 +12,7 @@ const ViewsChart = () => {
 		{ day: "Fr", x: 104, fill: "#B5E4CA" },
 		{ day: "Sa", x: 550, fill: "#2982FAFF" },
 		{ day: "Su", x: 105, fill: "#B5E4CA" },
-	];
+	]; 
 
 	return (
 		<div className="ViewsChart">

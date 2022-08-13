@@ -13,7 +13,7 @@ const ViewsCard = ({ title, val, val2, up, down, statusColor, status }) => {
 	return (
 		<div className="ViewsCard">
 			<CardTitle
-				title="Product activity"
+				title="Product activity" 
 				color="#B5E4CA"
 				margin="35px"
 				select={[

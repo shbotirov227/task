@@ -13,8 +13,8 @@ const Dashboard = () => {
 				<Activity />
 				<Products />
 			</div>
-		</div>
-	);
+		</div> 
+	); 
 };
 
 export default Dashboard;

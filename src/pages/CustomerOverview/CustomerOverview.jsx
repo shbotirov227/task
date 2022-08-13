@@ -13,9 +13,9 @@ const CustomerOverview = () => {
 				</div>
 
 				<div className="CustomerOverview-right"></div>
-			</div>
+			</div> 
 		</div>
 	);
-};
+}; 
 
 export default CustomerOverview;

@@ -14,7 +14,7 @@ const Account = ({ img, name, text, date, fill, status }) => {
 					<span className="Account-date">
 						{date}
 						<Dot fill={fill} />
-					</span>
+					</span> 
 				</div>
 				<p className="Account-text">{text}</p>
 			</div>

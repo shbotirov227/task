@@ -11,7 +11,7 @@ import CustomerImg from "../../assets/images/customerImg.png";
 import {
 	ChatDots,
 	InputSearchIcon,
-	MsgIcon1,
+	MsgIcon1, 
 	MsgIcon2,
 	SendIcon1,
 	SendIcon2,

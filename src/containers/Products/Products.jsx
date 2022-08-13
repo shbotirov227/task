@@ -16,7 +16,7 @@ const Products = () => {
 					buttons={["Market", "Traffic sources", "Viewers"]}
 				/>
 			</div>
-
+ 
 			<CheckItem />
 		</div>
 	);

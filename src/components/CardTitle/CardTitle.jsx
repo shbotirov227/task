@@ -7,7 +7,7 @@ import "./CardTitle.scss";
 const CardTitle = ({ title, select, color, margin, inputSearch, inputPlaceholder, buttons, typeBtn, type, padding, borderBottom }) => {
 	const [active, setActive] = useState(false);
 
-	return (
+	return ( 
 		<div className="CardTitle" style={{ marginBottom: margin, padding: padding, borderBottom: borderBottom }}>
 			<div className="CardTitle-left">
 				{color ? <div className="CardTitle-color" style={{ backgroundColor: color }}></div> : undefined}

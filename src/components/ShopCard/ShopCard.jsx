@@ -11,7 +11,7 @@ const ShopCard = ({ userImg, userName, userIndex, userProduct, userFollower, col
         speed: 500,
 		autoplay: false,
         slidesToShow: 4,
-        slidesToScroll: 4,
+        slidesToScroll: 4, 
 		control: false,
         responsive: [
             {

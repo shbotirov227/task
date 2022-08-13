@@ -10,7 +10,7 @@ import CustomerImg from "../../assets/images/customerImg.png";
 import {UpgradePage} from "../../pages/index";
 import "./Header.scss";
 
-const Header = () => {
+const Header = () => { 
 	return (
 		<div className="Header">
 			<div className="Header-inner mini-container">
